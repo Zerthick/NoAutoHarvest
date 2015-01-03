@@ -52,7 +52,7 @@ public class NoAutoHarvestMain extends JavaPlugin implements Listener {
     
     @EventHandler
     public void onWaterBreak(BlockFromToEvent event){
-        if(event.getBlock().getType() == Material.WATER || event.getBlock().getType() == Material.WATER){
+        if(event.getBlock().getType() == Material.WATER || event.getBlock().getType() == Material.STATIONARY_WATER){
             if(liquidSet.contains(event.getToBlock().getType().toString())){  //if the block being destoryed is on the liquid protect list
                 event.getToBlock().setType(Material.AIR);  //destory the block without drops
             }
