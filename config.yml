@@ -1,0 +1,25 @@
+liquid_protection:
+    - BROWN_MUSHROOM
+    - CARROT
+    - COCOA
+    - NETHER_STALK 
+    - POTATO
+    - RED_MUSHROOM 
+    - WHEAT
+    
+piston_protection:
+    - BROWN_MUSHROOM
+    - CACTUS 
+    - CARROT
+    - COCOA
+    - MELON_BLOCK 
+    - MELON_STEM
+    - NETHER_STALK 
+    - POTATO 
+    - PUMPKIN 
+    - PUMPKIN_STEM 
+    - RED_MUSHROOM
+    - SOIL
+    - SOUL_SAND 
+    - SUGAR_CANE_BLOCK 
+    - WHEAT 

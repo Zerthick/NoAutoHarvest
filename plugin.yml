@@ -1,0 +1,3 @@
+name: NoAutoHarvest
+main: com.gmail.zerthick.noautoharvest.NoAutoHarvestMain
+version: 0.1.1
