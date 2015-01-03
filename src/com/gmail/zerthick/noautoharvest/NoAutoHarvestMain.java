@@ -27,6 +27,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockFromToEvent;
 import org.bukkit.event.block.BlockPistonExtendEvent;
+import org.bukkit.event.block.BlockPistonRetractEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 /**
@@ -64,6 +65,14 @@ public class NoAutoHarvestMain extends JavaPlugin implements Listener {
         Block source = event.getBlock();
         int numBlocks = event.getBlocks().size();
         if(!isSafeBlock(source, event.getDirection(), numBlocks+1)){
+            event.setCancelled(true);
+        }
+    }
+    
+    @EventHandler
+    public void onPistonRetract(BlockPistonRetractEvent event){
+        Block source = event.getBlock().getRelative(event.getDirection());
+        if(!isSafeBlock(source, event.getDirection(), 1)){
             event.setCancelled(true);
         }
     }
