@@ -3,9 +3,12 @@ liquid_protection:
     - CARROT
     - COCOA
     - CROPS
+    - MELON_STEM
     - NETHER_STALK 
     - POTATO
-    - RED_MUSHROOM 
+    - PUMPKIN_STEM
+    - RED_MUSHROOM
+    - SUGAR_CANE_BLOCK
     
 piston_protection:
     - BROWN_MUSHROOM
